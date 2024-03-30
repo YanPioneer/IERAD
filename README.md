@@ -78,6 +78,7 @@ $$
 $$
 
 where $L$ represents the total number of disease categories in the dataset, $TP_i$ denotes the count of samples correctly classified within category $i$, $FP_i$ indicates the count of samples from other categories erroneously classified as $i$, and $FN_i$ indicates the count of samples belonging to category $i$ but incorrectly classified into other categories.
+
 $$
 Efficiency= \frac{1}{K} \sum_{i=1}^{K} \frac{Sym\_Num_i^*}{Sym\_Num_i}\ \ \   \  \  \     \ (15)
 $$
@@ -96,7 +97,7 @@ where $len_i$ represents the communication rounds between the agent and the pati
 
 In section 4.5.1, we demonstrat and analyze EIRAD's generation process of diagnostic paths through a case study. Compared to other methods, the symptoms inquired by EIRAD are highly related to the suspected diseases both structurally and semantically, and the calculation process is relatively transparent. To further illustrate the reasonableness of each node in EIRAD's diagnostic paths, we conduct a statistical analysis of symptom inquiries performed for all test user goals in DXY, as shown in Fig. 9. Fig. 9-a depicts a medical knowledge subgraph corresponding to DXY, where the values on edges represent the co-occurrence frequencies of diseases and symptoms in the dataset, reflecting the criticality of symptoms for diseases from a statistical perspective. Fig. 9-b and Fig. 9-c illustrate the statistical illustrations of symptom inquiries during the consultation process by the EIRAD and KRDS, respectively. The size of symptom nodes is positively correlated with inquiry frequency, and the color and width of edges are positively related to the number of times the symptoms are asked during disease diagnosis. It can be seen from the Fig. 9 that the symptoms queried by our proposed model during the consultation process substantially overlap with the key symptoms highly relevant to disease diagnosis, as reflected in the knowledge graph (frequently co-occurring and helpful for differential diagnosis), further demonstrating the rationality of the symptom inquiries and diagnostic paths of EIRAD.
 
-![sym_statistic_com1](D:\学习\闫莲_硕博\00_论文\KBS\sym_statistic_com1.svg)
+![sym_statistic_com1](https://github.com/YanPioneer/IERAD/blob/main/sym_statistic_com1.svg)
 
 Fig. 9. The statistical analysis results of symptom inquiries and disease diagnosis.
 
