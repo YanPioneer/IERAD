@@ -14,7 +14,7 @@ torch==1.8.0 tensorboardX==2.5.1 numpy==1.20.1
 
 Typically, DSMD simulates the real doctor's consultation process. During the consultation, the doctor first determines a set of suspected diseases based on the patient's chief complaints and selects symptoms associated with these diseases for further inquiry. They then incorporate medical knowledge and diagnostic experience to gather critical diagnostic evidence and confirm/exclude relevant diseases (updating the set of suspected diseases) according to patient's responses until the final preliminary diagnosis is given [9], [10].
 
-![img](file:///C:\Users\64361\AppData\Local\Temp\ksohtml14600\wps1.png)
+![img](https://github.com/YanPioneer/IERAD/blob/main/Fig_Process_DSMD%202(1)_00.jpg)
 
 Fig. 1 DSMD involves multi-turn conversations where doctors inquire further based on patient complaints and ultimately provide a preliminary diagnosis.
 
