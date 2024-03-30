@@ -88,9 +88,11 @@ Recall= \frac{1}{K} \sum_{i=1}^{K} \frac{Sym\_Num_i^*}{|s_i^p|}\ \ \   \  \  \  
 $$
 
 where $K$ represents the total number of user goals, i.e., the number of dialogue samples. $Sym\_Num_i$ signifies the count of symptoms queried by the model during each dialogue, while $Sym\_Num_i^*$ represents the count of symptoms queried by the model and confirmed by the patient (either clear denial or acknowledgment), $|s_i^p|$ represents the number of potential symptoms of the $i$-th patient, that is, the number of implicit symptoms of the $i$-th user goal in the dataset.
+
 $$
 Length=\frac{1}{K} \sum_{i=1}^{K}len_i\ \ \   \  \  
 $$
+
 where $len_i$ represents the communication rounds between the agent and the patient throughout the dialogue process, from the patient's self-report to the agent delivers the preliminary diagnosis for the $i$-th user goal.
 
 # Analyzing interpretability from a statistical perspective
